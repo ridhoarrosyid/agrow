@@ -1,68 +1,41 @@
 import Link from "next/link";
 import Image from "next/image";
 import ArrowLeft from "../(logo)/arrowLeft";
+import { allNews } from "../(lib)/data";
 
 export default function Page() {
-  const listNews = [
-    {
-      name: "nama berita",
-      img: "/",
-      description: "ini description",
-    },
-    {
-      name: "nama berita",
-      img: "/",
-      description: "ini description",
-    },
-    {
-      name: "nama berita",
-      img: "/",
-      description: "ini description",
-    },
-    {
-      name: "nama berita",
-      img: "/",
-      description: "ini description",
-    },
-    {
-      name: "nama berita",
-      img: "/",
-      description: "ini description",
-    },
-  ];
-
   return (
     <div>
-      <div className="relative mb-4 border-b border-gray-200 shadow-md">
+      <div className="relative mb-4 border-b border-gray-200 bg-[#96efc1] pt-10 shadow-md">
         <Link href={"/dashboard"} className="absolute left-2 top-2 w-7 ">
           <ArrowLeft />
         </Link>
         <Image
-          src={"/empty.jpg"}
+          src={"/sayur.jpg"}
           alt="ini adalah gambar berita"
-          width={10}
-          height={10}
+          width={1000}
+          height={1000}
           className="h-40 w-full object-cover object-center"
         />
       </div>
       <div className="px-4">
         <h1 className="mb-4 text-xl font-bold">News</h1>
         <ul className="flex h-44 flex-col gap-y-4">
-          {listNews.map((e, i) => (
+          {allNews.map((e, i) => (
             <li
               key={i}
-              className="flex justify-start gap-2 rounded-md border border-gray-200 bg-white shadow"
+              className="flex flex-col items-center justify-start gap-2 rounded-md border border-gray-200 bg-white p-4 shadow"
             >
               <Image
-                src="/empty.jpg"
+                src={e.img}
                 alt="gambar berita"
-                width={10}
-                height={10}
-                className="h-full w-16 rounded-l-md object-cover object-center"
+                width={1000}
+                height={1000}
+                className="w-full rounded-l-md object-cover object-center "
               />
               <div>
-                <h1 className="font-bold">{e.name}</h1>
-                <p className="text-sm">{e.description}</p>
+                <h1 className=" mb-4 font-bold capitalize">{e.name}</h1>
+                <p className="text-sm text-gray-500">{e.description}</p>
               </div>
             </li>
           ))}

@@ -6,17 +6,19 @@ export default function HotNews({
   children: { name: string; img: string; description: string };
 }) {
   return (
-    <div className="flex justify-start gap-2 rounded-md border border-gray-200 bg-white shadow">
+    <div className="flex h-32 justify-start gap-2 rounded-md border border-gray-200 bg-white shadow">
       <Image
-        src="/empty.jpg"
+        src={children.img}
         alt="gambar berita"
-        width={10}
-        height={10}
-        className="h-full w-16 rounded-l-md object-cover object-center"
+        width={1000}
+        height={1000}
+        className="aspect-square h-full w-16 rounded-l-md object-cover object-center"
       />
-      <div>
-        <h1 className="font-bold">{children.name}</h1>
-        <p className="text-sm">{children.description}</p>
+      <div className="p-1">
+        <h1 className="line-clamp-2 font-bold">{children.name}</h1>
+        <p className="line-clamp-1 text-sm text-gray-500">
+          {children.description}
+        </p>
       </div>
     </div>
   );
