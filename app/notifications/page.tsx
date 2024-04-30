@@ -1,4 +1,6 @@
-import Image from "next/image";
+import Link from "next/link";
+import NavBar from "../(ui)/navBar";
+import ArrowLeft from "../(logo)/arrowLeft";
 
 export default function Page() {
   const listNotifications = [
@@ -26,13 +28,19 @@ export default function Page() {
 
   return (
     <div>
-      <div className="px-4">
-        <h1 className="mb-4 text-xl font-bold">News</h1>
+      <NavBar></NavBar>
+      <div className="p-4">
+        <div className="mb-4 flex items-center justify-start gap-2">
+          <Link href={"/dashboard"} className="h-5 w-5">
+            <ArrowLeft />
+          </Link>
+          <h1 className="text-xl font-bold">Notifications</h1>
+        </div>
         <ul className="flex h-44 flex-col gap-y-4">
           {listNotifications.map((e, i) => (
             <li
               key={i}
-              className="flex justify-start gap-2 rounded-md border border-gray-200 bg-white shadow"
+              className="flex justify-start gap-2 rounded-md border border-gray-200 bg-white p-2 shadow"
             >
               <div>
                 <h1 className="font-bold">{e.name}</h1>

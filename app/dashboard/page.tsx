@@ -5,6 +5,7 @@ import CategoryCard from "../(ui)/categoryCard";
 import SalesCard from "../(ui)/salesCard";
 import HotNews from "../(ui)/hotNews";
 import Link from "next/link";
+import FeatureCard from "../(ui)/featureCard";
 
 export default function Dashboard() {
   const items = [
@@ -80,10 +81,30 @@ export default function Dashboard() {
       description: "deskripsi berita. ini berisi deskripsi berita",
     },
   ];
+
+  const features = [
+    {
+      img: "/feature-1.png",
+    },
+    {
+      img: "/feature-2.png",
+    },
+    {
+      img: "/feature-3.png",
+    },
+  ];
   return (
     <div>
       <NavBar></NavBar>
       <main className="space-y-5 p-4">
+        <section>
+          <h2 className="mb-4 text-xl font-bold">Feature</h2>
+          <ul className="flex justify-center gap-2">
+            {features.map((e, i) => (
+              <FeatureCard key={i}>{e}</FeatureCard>
+            ))}
+          </ul>
+        </section>
         <section>
           <h2 className="mb-4 text-xl font-bold">Categories</h2>
           <div className="flex justify-center gap-2">
