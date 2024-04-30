@@ -76,7 +76,7 @@ export default function SalesCard({
           <span className="text-lg font-bold text-gray-900 ">$599</span>
           <Link
             href="#"
-            className="rounded-lg bg-blue-700 p-1 text-center text-xs font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 "
+            className="rounded bg-blue-700 p-1 text-center text-xs font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 "
           >
             Add to cart
           </Link>

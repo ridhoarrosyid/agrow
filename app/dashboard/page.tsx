@@ -1,8 +1,10 @@
 "use client";
 
-import NavBar from "../ui/navBar";
-import CategoryCard from "../ui/categoryCard";
-import SalesCard from "../ui/salesCard";
+import NavBar from "../(ui)/navBar";
+import CategoryCard from "../(ui)/categoryCard";
+import SalesCard from "../(ui)/salesCard";
+import HotNews from "../(ui)/hotNews";
+import Link from "next/link";
 
 export default function Dashboard() {
   const items = [
@@ -50,6 +52,34 @@ export default function Dashboard() {
       img: "/",
     },
   ];
+
+  const hotNews = [
+    {
+      name: "nama berita",
+      img: "/",
+      description: "deskripsi berita. ini berisi deskripsi berita",
+    },
+    {
+      name: "nama berita",
+      img: "/",
+      description: "deskripsi berita. ini berisi deskripsi berita",
+    },
+    {
+      name: "nama berita",
+      img: "/",
+      description: "deskripsi berita. ini berisi deskripsi berita",
+    },
+    {
+      name: "nama berita",
+      img: "/",
+      description: "deskripsi berita. ini berisi deskripsi berita",
+    },
+    {
+      name: "nama berita",
+      img: "/",
+      description: "deskripsi berita. ini berisi deskripsi berita",
+    },
+  ];
   return (
     <div>
       <NavBar></NavBar>
@@ -63,7 +93,24 @@ export default function Dashboard() {
           </div>
         </section>
         <section>
+          <div className="flex items-center justify-between">
+            <h2 className="mb-4 text-xl font-bold">Hot News</h2>
+            <Link
+              href={"/hot-news"}
+              className="mb-4 rounded bg-blue-700 p-1 text-center text-xs font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 "
+            >
+              See Other
+            </Link>
+          </div>
+          <div className="flex h-44 flex-col gap-y-4 overflow-auto">
+            {hotNews.map((e, i) => (
+              <HotNews key={i}>{e}</HotNews>
+            ))}
+          </div>
+        </section>
+        <section>
           <h2 className="mb-4 text-xl font-bold">On Sale</h2>
+
           <div className="grid grid-cols-2 gap-2">
             {sales.map((e, i) => (
               <SalesCard key={i}>{e}</SalesCard>
