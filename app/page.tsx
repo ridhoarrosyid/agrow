@@ -7,9 +7,9 @@ export default function Home() {
       <Image
         src={"/logo.png"}
         alt="Agrow Image"
-        width={500}
-        height={500}
-        className="row-span-3 w-full place-self-center"
+        width={1000}
+        height={1000}
+        className="row-span-3 w-full place-self-center md:w-[45rem]"
       />
       <Link
         href={"/dashboard"}

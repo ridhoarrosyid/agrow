@@ -8,7 +8,7 @@ export default function FeatureCard({
   return (
     <li>
       <Image
-        className="w-28 "
+        className="w-28 md:w-40"
         src={children.img}
         alt={children.img}
         width={5000}

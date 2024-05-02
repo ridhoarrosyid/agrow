@@ -12,10 +12,10 @@ export default function Dashboard() {
   return (
     <div>
       <NavBar></NavBar>
-      <main className="space-y-5 p-4">
+      <main className="space-y-5 p-4 md:space-y-20">
         <section>
           <h2 className="mb-4 text-xl font-bold">Feature</h2>
-          <ul className="flex items-center justify-center gap-2">
+          <ul className="flex items-center justify-center gap-2 md:justify-evenly md:gap-0">
             {features.map((e, i) => (
               <FeatureCard key={i}>{e}</FeatureCard>
             ))}
@@ -23,7 +23,7 @@ export default function Dashboard() {
         </section>
         <section>
           <h2 className="mb-4 text-xl font-bold">Categories</h2>
-          <div className="flex justify-center gap-2">
+          <div className="flex justify-center gap-2 md:justify-evenly md:gap-0">
             {items.map((e) => (
               <CategoryCard key={e.name}>{e}</CategoryCard>
             ))}
@@ -48,7 +48,7 @@ export default function Dashboard() {
         <section>
           <h2 className="mb-4 text-xl font-bold">On Sale</h2>
 
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-2 gap-2 md:grid-cols-4">
             {sales.map((e, i) => (
               <SalesCard key={i}>{e}</SalesCard>
             ))}

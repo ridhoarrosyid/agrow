@@ -17,6 +17,12 @@ export default function NavBar() {
             Andi
           </span>
         </div>
+        <input
+          type="text"
+          id="search-navbar"
+          className="mx-auto hidden rounded-lg border border-gray-300 bg-gray-50 p-2 ps-10 text-sm text-gray-900 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500 md:block md:w-[70%]"
+          placeholder="Search..."
+        />
         <div className="flex h-5 gap-x-1">
           <Link href={"/notifications"} className="block h-5 w-5">
             <svg
@@ -72,7 +78,7 @@ export default function NavBar() {
       <input
         type="text"
         id="search-navbar"
-        className="mx-auto block w-[90%] rounded-lg border border-gray-300 bg-gray-50 p-2 ps-10 text-sm text-gray-900 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+        className="mx-auto block w-[90%] rounded-lg border border-gray-300 bg-gray-50 p-2 ps-10 text-sm text-gray-900 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500 md:hidden"
         placeholder="Search..."
       />
     </nav>
