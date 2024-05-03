@@ -72,5 +72,3 @@ function acc(carts: { name: string; quantity: number; price: number }[]): any {
   const hasilKali = carts.map((e) => e.price * e.quantity);
   return hasilKali.reduce((a, b) => a + b, 0);
 }
-
-function handlePlus(element: Cart, carts: Carts, setCarts: any) {}

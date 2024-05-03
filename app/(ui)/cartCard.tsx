@@ -21,7 +21,7 @@ export default function CartCard({
         <p>Quantity</p>
         <div className="flex items-center justify-between gap-x-5">
           <div
-            className="h-4 w-4"
+            className={`h-4 w-4 ${children.quantity <= 0 && "hidden"}`}
             onClick={() => {
               handleMinus(children);
             }}

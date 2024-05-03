@@ -75,7 +75,6 @@ export default function Product() {
       </Link>
       <Image
         src={sale.img}
-        priority
         alt="gambar"
         width={1000}
         height={1000}
