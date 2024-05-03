@@ -6,12 +6,27 @@ import SalesCard from "../(ui)/salesCard";
 import HotNews from "../(ui)/hotNews";
 import Link from "next/link";
 import FeatureCard from "../(ui)/featureCard";
-import { items, features, hotNews, sales } from "../(lib)/data";
+import { items, features, hotNews, sales, carts } from "../(lib)/data";
+import { useEffect, useState } from "react";
+import { Carts } from "../(lib)/type";
 
 export default function Dashboard() {
+  const [totalCarts, setTotalCarts] = useState(0);
+  useEffect(() => {
+    if (!localStorage.getItem("cartData")) {
+      localStorage.setItem("cartData", JSON.stringify([]));
+    }
+
+    const dataStorage: Carts = JSON.parse(
+      localStorage.getItem("cartData") as string,
+    );
+    const total = dataStorage.map((e) => e.quantity).reduce((a, b) => a + b, 0);
+    setTotalCarts(total);
+  }, []);
+
   return (
     <div>
-      <NavBar></NavBar>
+      <NavBar totalCarts={totalCarts}></NavBar>
       <main className="space-y-5 p-4 md:space-y-20">
         <section>
           <h2 className="mb-4 text-xl font-bold">Feature</h2>

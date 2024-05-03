@@ -1,9 +1,9 @@
-export default function CartAccumulation() {
+export default function CartAccumulation({ total }: { total: number }) {
   return (
     <div className="fixed bottom-0 z-10 flex w-full justify-between border-t border-gray-300 bg-[#96efc1] p-4 shadow">
       <div>
         <p className="text-sm text-gray-500">total pembayaran</p>
-        <p className="font-bold">$50</p>
+        <p className="font-bold">${total}</p>
       </div>
       <button className="flex h-10 w-20 items-center justify-center rounded bg-blue-700 p-2 text-center text-xs font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 ">
         <svg
@@ -14,11 +14,11 @@ export default function CartAccumulation() {
           fill="#000000"
           className="h-full"
         >
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
           <g
             id="SVGRepo_tracerCarrier"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           ></g>
           <g id="SVGRepo_iconCarrier">
             <title>arrow_right [#336]</title> <desc>Created with Sketch.</desc>
@@ -26,9 +26,9 @@ export default function CartAccumulation() {
             <g
               id="Page-1"
               stroke="none"
-              stroke-width="1"
+              strokeWidth="1"
               fill="none"
-              fill-rule="evenodd"
+              fillRule="evenodd"
             >
               <g
                 id="Dribbble-Light-Preview"

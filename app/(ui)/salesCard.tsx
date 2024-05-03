@@ -75,7 +75,10 @@ export default function SalesCard({
           </div>
           <div className="flex items-center justify-between">
             <span className="text-lg font-bold text-gray-900 ">
-              {children.price}
+              ${children.price}
+            </span>
+            <span className="rounded bg-blue-500 p-1 text-center text-sm font-normal capitalize text-white md:text-base md:font-bold">
+              see product
             </span>
           </div>
         </div>

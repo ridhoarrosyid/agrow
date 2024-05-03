@@ -17,47 +17,75 @@ export const items = [
   },
 ];
 
+export const carts = [
+  {
+    name: "product name",
+    quantity: 0,
+    price: "50",
+  },
+  {
+    name: "product name",
+    quantity: 0,
+    price: "50",
+  },
+  {
+    name: "product name",
+    quantity: 0,
+    price: "$50",
+  },
+  {
+    name: "product name",
+    quantity: 5,
+    price: "$50",
+  },
+  {
+    name: "product name",
+    quantity: 5,
+    price: "$50",
+  },
+];
+
 export const sales = [
   {
     name: "carrot",
     img: "/wortel.jpg",
     desc: "The carrot (Daucus carota subsp. sativus) is a root vegetable, typically orange in color, though heirloom variants including purple, black, red, white, and yellow cultivars exist,[2][3][4] all of which are domesticated forms of the wild carrot, Daucus carota, native to Europe and Southwestern Asia. The plant probably originated in Persia and was originally cultivated for its leaves and seeds. The most commonly eaten part of the plant is the taproot, although the stems and leaves are also eaten. The domestic carrot has been selectively bred for its enlarged, more palatable, less woody-textured taproot.",
-    price: "$2",
+    price: "2",
     link: "/products/carrot",
   },
   {
     name: "egg plant",
     img: "/terong.jpg",
     desc: "Eggplant (US, CA, AU, NZ, PH), aubergine (UK,[1] IE), brinjal (IN, SG, MY, ZA), or baigan (IN, GY)[2][3] is a plant species in the nightshade family Solanaceae. Solanum melongena is grown worldwide for its edible fruit.",
-    price: "$4",
+    price: "4",
     link: "/products/egg-plant",
   },
   {
     name: "grain",
     img: "/gandum.jpg",
     desc: "A grain is a small, hard, dry fruit (caryopsis) – with or without an attached hull layer – harvested for human or animal consumption.[1] A grain crop is a grain-producing plant. The two main types of commercial grain crops are cereals and legumes.",
-    price: "$2.5",
+    price: "2.5",
     link: "/products/grain",
   },
   {
     name: "rice",
     img: "/beras.jpg",
     desc: "Rice is a cereal grain, and in its domesticated form is the staple food for over half of the world's human population, particularly in Asia and Africa, due to the vast amount of soil that is able to grow rice. Rice is the seed of the grass species Oryza sativa (Asian rice) or, much less commonly, O. glaberrima (African rice). Asian rice was domesticated in China some 13,500 to 8,200 years ago, while African rice was domesticated in Africa some 3,000 years ago. Rice has become commonplace in many cultures worldwide; in 2021, 787 million tons were produced, placing it fourth after sugarcane, maize, and wheat. Only some 8% of rice is traded internationally. China, India, and Indonesia are the largest consumers of rice. A substantial amount of the rice produced in developing nations is lost after harvest through factors such as poor transport and storage. Rice yields can be reduced by pests including insects, rodents, and birds, as well as by weeds, and by diseases such as rice blast. Traditional polycultures such as rice-duck farming, and modern integrated pest management seek to control damage from pests in a sustainable way.",
-    price: "$10",
+    price: "10",
     link: "/products/rice",
   },
   {
     name: "banana",
     img: "/pisang.jpg",
     desc: "A banana is an elongated, edible fruit – botanically a berry[1] – produced by several kinds of large herbaceous flowering plants in the genus Musa. In some countries, cooking bananas are called plantains, distinguishing them from dessert bananas. The fruit is variable in size, color, and firmness, but is usually elongated and curved, with soft flesh rich in starch covered with a rind, which may have a variety of colors when ripe. The fruits grow upward in clusters near the top of the plant. Almost all modern edible seedless (parthenocarp) bananas come from two wild species – Musa acuminata and Musa balbisiana. Most cultivated bananas are M. acuminata, M. balbisiana, or hybrids of the two.",
-    price: "$2",
+    price: "2",
     link: "/products/banana",
   },
   {
     name: "corn",
     img: "/jagung.jpg",
     desc: "Maize /meɪz/ (Zea mays), also known as corn in North American and Australian English, is a tall stout grass that produces cereal grain. It was domesticated by indigenous peoples in southern Mexico about 9,000 years ago from wild teosinte. Native Americans planted it alongside beans and squashes in the Three Sisters polyculture. The leafy stalk of the plant gives rise to male inflorescences or tassels which produce pollen, and female inflorescences called ears. The ears yield grain, known as kernels or seeds. In modern commercial varieties, these are usually yellow or white; other varieties can be of many colors.",
-    price: "$2",
+    price: "2",
     link: "/products/corn",
   },
 ];
