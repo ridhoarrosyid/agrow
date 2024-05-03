@@ -1,6 +1,10 @@
+"use client";
+
 import Link from "next/link";
 import NavBar from "../(ui)/navBar";
 import ArrowLeft from "../(logo)/arrowLeft";
+import { useEffect, useState } from "react";
+import { Carts } from "../(lib)/type";
 
 export default function Page() {
   const listNotifications = [
@@ -26,9 +30,21 @@ export default function Page() {
     },
   ];
 
+  const [totalCarts, setTotalCarts] = useState(0);
+
+  useEffect(() => {
+    const dataStorage: Carts = JSON.parse(
+      localStorage.getItem("cartData") as string,
+    );
+    const totalData = dataStorage
+      .map((e) => e.quantity)
+      .reduce((a, b) => a + b, 0);
+    setTotalCarts(totalData);
+  }, []);
+
   return (
     <div>
-      <NavBar></NavBar>
+      <NavBar totalCarts={totalCarts}></NavBar>
       <div className="p-4">
         <div className="mb-4 flex items-center justify-start gap-2">
           <Link href={"/dashboard"} className="h-5 w-5">
