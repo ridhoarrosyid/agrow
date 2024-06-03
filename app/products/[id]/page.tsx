@@ -78,7 +78,7 @@ export default function Product() {
         alt="gambar"
         width={1000}
         height={1000}
-        className="h-52 object-cover object-center"
+        className="mx-auto h-52 object-cover object-center"
       />
       <div className="space-y-4 p-4">
         <h1 className="text-2xl font-bold capitalize">{sale.name}</h1>
