@@ -1,14 +1,15 @@
 "use client";
 
 import NavBar from "../(ui)/navBar";
-import CategoryCard from "../(ui)/categoryCard";
+
 import SalesCard from "../(ui)/salesCard";
 import HotNews from "../(ui)/hotNews";
 import Link from "next/link";
-import FeatureCard from "../(ui)/featureCard";
-import { items, features, hotNews, sales, carts } from "../(lib)/data";
+
+import { hotNews, sales } from "../(lib)/data";
 import { useEffect, useState } from "react";
 import { Carts } from "../(lib)/type";
+import Image from "next/image";
 
 export default function Dashboard() {
   const [totalCarts, setTotalCarts] = useState(0);
@@ -27,23 +28,137 @@ export default function Dashboard() {
   return (
     <div>
       <NavBar totalCarts={totalCarts}></NavBar>
+      <input
+        type="text"
+        id="search-navbar"
+        className="mx-auto block w-[90%] rounded-full border bg-gray-100 p-2 ps-10 text-sm text-gray-900 shadow-md outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500 md:hidden"
+        placeholder="Search..."
+      />
       <main className="space-y-5 p-4 md:space-y-20">
-        <section>
-          <h2 className="mb-4 text-xl font-bold">Feature</h2>
-          <ul className="flex items-center justify-center gap-2 md:justify-evenly md:gap-0">
-            {features.map((e, i) => (
-              <FeatureCard key={i}>{e}</FeatureCard>
-            ))}
-          </ul>
-        </section>
-        <section>
-          <h2 className="mb-4 text-xl font-bold">Categories</h2>
-          <div className="flex justify-center gap-2 md:justify-evenly md:gap-0">
-            {items.map((e) => (
-              <CategoryCard key={e.name}>{e}</CategoryCard>
-            ))}
+        <section className="mx-auto">
+          <h1 className="mb-3 text-xl font-medium">Grow Pre Order</h1>
+          <div className="flex w-full justify-evenly rounded-full border-2 border-gray-300 bg-gray-200  ">
+            <div className="w-1/2 text-center">
+              <p>Hari ini</p>
+              <p className="text-xs text-red-500">Tutup</p>
+            </div>
+            <div className="w-1/2 rounded-full bg-gray-50 text-center">
+              <p className="font-semibold">Terjadwal</p>
+              <p className="text-xs">6000+ Product</p>
+            </div>
           </div>
         </section>
+        <section className="grid grid-cols-2 overflow-hidden rounded-xl">
+          <Image
+            src={"/penawaran3.jpg"}
+            alt="penawaran 3"
+            width={1600}
+            height={900}
+          />
+          <Image
+            src={"/penawaran2.jpg"}
+            alt="penawaran 2"
+            width={1600}
+            height={900}
+          />
+          <Image
+            src={"/penawaran4.jpg"}
+            alt="penawaran 4"
+            width={1600}
+            height={900}
+          />
+          <Image
+            src={"/penawaran1.jpg"}
+            alt="penawaran 1"
+            width={1600}
+            height={900}
+          />
+        </section>
+        <section className="overflow-auto">
+          <div className="mt-4 flex w-max gap-4 overflow-auto pb-3 text-center text-xs">
+            <div>
+              <Image
+                src={"/kategori/all.jpg"}
+                alt="all"
+                width={400}
+                height={400}
+                className="mb-1 h-[80px] w-[80px] rounded"
+              />
+              All
+            </div>
+            <div>
+              <Image
+                src={"/kategori/fruit.jpg"}
+                alt="fruit"
+                width={400}
+                height={400}
+                className="mb-1 h-[80px] w-[80px] rounded"
+              />
+              Fruits
+            </div>
+            <div>
+              <Image
+                src={"/kategori/vegetable.jpg"}
+                alt="vegetables"
+                width={400}
+                height={400}
+                className="mb-1 h-[80px] w-[80px] rounded"
+              />
+              Vegetables
+            </div>
+            <div>
+              <Image
+                src={"/kategori/grocery.jpg"}
+                alt="grocery"
+                width={400}
+                height={400}
+                className="mb-1 h-[80px] w-[80px] rounded"
+              />
+              Groceries
+            </div>
+            <div>
+              <Image
+                src={"/kategori/protein.jpg"}
+                alt="protein"
+                width={400}
+                height={400}
+                className="mb-1 h-[80px] w-[80px] rounded"
+              />
+              Protein
+            </div>
+            <div>
+              <Image
+                src={"/kategori/cereal.jpg"}
+                alt="cereal"
+                width={400}
+                height={400}
+                className="mb-1 h-[80px] w-[80px] rounded"
+              />
+              Cereals
+            </div>
+            <div>
+              <Image
+                src={"/kategori/oil.jpg"}
+                alt="oil"
+                width={400}
+                height={400}
+                className="mb-1 h-[80px] w-[80px] rounded"
+              />
+              Oil
+            </div>
+            <div>
+              <Image
+                src={"/kategori/herbs.jpg"}
+                alt="herbs"
+                width={400}
+                height={400}
+                className="mb-1 h-[80px] w-[80px] rounded"
+              />
+              Herbs
+            </div>
+          </div>
+        </section>
+
         <section>
           <div className="flex items-center justify-between">
             <h2 className="mb-4 text-xl font-bold">Agro News</h2>

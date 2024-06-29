@@ -1,24 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import Cart from "../(logo)/cart";
-import { useEffect, useState } from "react";
-import { Cart as CartType, Carts } from "../(lib)/type";
 
 export default function NavBar({ totalCarts }: { totalCarts: number }) {
-  // const [total, setTotal] = useState(totalCarts);
-
-  // useEffect(() => {
-  //   const cartDataStorage: Carts = JSON.parse(
-  //     localStorage.getItem("cartData") as string,
-  //   );
-  //   const totalData = cartDataStorage
-  //     .map((e: CartType) => e.quantity)
-  //     .reduce((a: number, b: number) => a + b, 0);
-  //   setTotal(totalData);
-  // }, []);
-
   return (
-    <nav className="border-gray-200  bg-[#96efc1] pb-4 ">
+    <nav className="bg-navbar h-[120px] border-gray-200 bg-cover bg-left-top bg-no-repeat pb-4">
       <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4 ">
         <div className="flex items-center space-x-3">
           <Image
@@ -28,7 +14,7 @@ export default function NavBar({ totalCarts }: { totalCarts: number }) {
             className="inline-block h-10 w-10 rounded-full object-cover object-center"
             alt="Flowbite Logo"
           />
-          <span className="self-center whitespace-nowrap text-2xl font-semibold text-[#0C0C0C]">
+          <span className="self-center whitespace-nowrap text-2xl font-semibold text-white">
             Andi
           </span>
         </div>
@@ -39,12 +25,15 @@ export default function NavBar({ totalCarts }: { totalCarts: number }) {
           placeholder="Search..."
         />
         <div className="flex h-5 gap-x-8">
-          <Link href={"/notifications"} className="block h-7 w-7">
+          <Link
+            href={"/notifications"}
+            className=" block h-8  w-8 rounded-full bg-white p-1"
+          >
             <svg
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              stroke="#0C0C0C"
+              stroke="#fff"
             >
               <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
@@ -63,7 +52,10 @@ export default function NavBar({ totalCarts }: { totalCarts: number }) {
               </g>
             </svg>
           </Link>
-          <Link href={"/carts"} className="relative block h-7 w-7">
+          <Link
+            href={"/carts"}
+            className="relative block h-8 w-8 rounded-full bg-white p-1"
+          >
             <p className="absolute -bottom-3 -left-4 flex h-6 w-6 items-center justify-center rounded-full bg-red-600 p-1 text-xs font-medium text-white">
               {totalCarts}
             </p>
@@ -71,12 +63,6 @@ export default function NavBar({ totalCarts }: { totalCarts: number }) {
           </Link>
         </div>
       </div>
-      <input
-        type="text"
-        id="search-navbar"
-        className="mx-auto block w-[90%] rounded-lg border border-gray-300 bg-gray-50 p-2 ps-10 text-sm text-gray-900 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500 md:hidden"
-        placeholder="Search..."
-      />
     </nav>
   );
 }

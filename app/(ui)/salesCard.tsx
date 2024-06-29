@@ -10,7 +10,7 @@ export default function SalesCard({
     <div className="w-full max-w-sm rounded-lg border border-gray-200 bg-white p-4 shadow ">
       <Link href={children.link}>
         <Image
-          className="mb-4 aspect-square w-full rounded-t-lg  object-none object-center"
+          className="mb-4 aspect-square w-full rounded-t-lg  object-center"
           src={children.img}
           alt="product image"
           width={1000}
