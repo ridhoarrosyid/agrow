@@ -85,7 +85,7 @@ export const sales = [
   },
   {
     name: "Cucumbar",
-    img: "/product/Timun.jpg",
+    img: "/product/timun.jpg",
     desc: "The cucumber (Cucumis sativus) is a widely-cultivated creeping vine plant in the family Cucurbitaceae that bears cylindrical to spherical fruits, which are used as culinary vegetables.[1] Considered an annual plant,[2] there are three main types of cucumber—slicing, pickling, and seedless—within which several cultivars have been created. The cucumber originates in Asia extending from India, Nepal, Bangladesh, China (Yunnan, Guizhou, Guangxi), and Northern Thailand,[3][4][5][6] but now grows on most continents, and many different types of cucumber are grown commercially and traded on the global market.",
     price: "2",
     link: "/products/cucumbar",
