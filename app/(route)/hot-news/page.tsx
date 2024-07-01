@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import ArrowLeft from "../(logo)/arrowLeft";
-import { allNews } from "../(lib)/data";
+import ArrowLeft from "@/app/(logo)/arrowLeft";
+import { allNews } from "@/app/(lib)/data";
 
 export default function Page() {
   return (

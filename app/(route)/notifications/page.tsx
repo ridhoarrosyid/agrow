@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import NavBar from "../(ui)/navBar";
-import ArrowLeft from "../(logo)/arrowLeft";
+import NavBar from "@/app/(ui)/navBar";
+import ArrowLeft from "@/app/(logo)/arrowLeft";
 import { useEffect, useState } from "react";
-import { Carts } from "../(lib)/type";
+import { Carts } from "@/app/(lib)/type";
 
 export default function Page() {
   const listNotifications = [

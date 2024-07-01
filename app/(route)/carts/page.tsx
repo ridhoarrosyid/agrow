@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import ArrowLeft from "../(logo)/arrowLeft";
-import CartAccumulation from "../(ui)/cartAccumulation";
-import CartCard from "../(ui)/cartCard";
-import NavBar from "../(ui)/navBar";
+import ArrowLeft from "@/app/(logo)/arrowLeft";
+import CartAccumulation from "@/app/(ui)/cartAccumulation";
+import CartCard from "@/app/(ui)/cartCard";
+import NavBar from "@/app/(ui)/navBar";
 import Link from "next/link";
-import { Cart, Carts } from "../(lib)/type";
+import { Cart, Carts } from "@/app/(lib)/type";
 
 export default function Page() {
   const [carts, setCarts] = useState([{ name: "", quantity: 0, price: 0 }]);

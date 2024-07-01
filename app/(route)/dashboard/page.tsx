@@ -1,14 +1,14 @@
 "use client";
 
-import NavBar from "../(ui)/navBar";
+import NavBar from "@/app/(ui)/navBar";
 
-import SalesCard from "../(ui)/salesCard";
-import HotNews from "../(ui)/hotNews";
+import SalesCard from "@/app/(ui)/salesCard";
+import HotNews from "@/app/(ui)/hotNews";
 import Link from "next/link";
 
-import { hotNews, sales } from "../(lib)/data";
+import { hotNews, sales } from "@/app/(lib)/data";
 import { useEffect, useState } from "react";
-import { Carts } from "../(lib)/type";
+import { Carts } from "@/app/(lib)/type";
 import Image from "next/image";
 
 export default function Dashboard() {
