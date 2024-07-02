@@ -5,7 +5,7 @@ import { sales } from "@/app/(lib)/data";
 import ArrowLeft from "@/app/(logo)/arrowLeft";
 import Link from "next/link";
 
-import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Cart from "@/app/(logo)/cart";
 import { Cart as CartType } from "@/app/(lib)/type";
 
