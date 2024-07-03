@@ -187,6 +187,14 @@ export default function Dashboard() {
           <h2 className="mb-4 text-xl font-bold">On Sale</h2>
 
           <div className="grid grid-cols-2 gap-2 md:grid-cols-4">
+            <Image
+              className="col-span-2"
+              src="/logo/fastSale.svg"
+              alt="Fast sale"
+              width={480}
+              height={270}
+            />
+
             {sales.map((e, i) => (
               <SalesCard key={i}>{e}</SalesCard>
             ))}

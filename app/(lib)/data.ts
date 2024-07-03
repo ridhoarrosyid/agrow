@@ -27,20 +27,7 @@ export const carts = [
 ];
 
 export const sales = [
-  {
-    name: "Carrot",
-    img: "/product/wortel.jpg",
-    desc: "The carrot (Daucus carota subsp. sativus) is a root vegetable, typically orange in color, though heirloom variants including purple, black, red, white, and yellow cultivars exist,[2][3][4] all of which are domesticated forms of the wild carrot, Daucus carota, native to Europe and Southwestern Asia. The plant probably originated in Persia and was originally cultivated for its leaves and seeds. The most commonly eaten part of the plant is the taproot, although the stems and leaves are also eaten. The domestic carrot has been selectively bred for its enlarged, more palatable, less woody-textured taproot.",
-    price: "2",
-    link: "/products/carrot",
-  },
-  {
-    name: "Egg plant",
-    img: "/product/terong.jpg",
-    desc: "Eggplant (US, CA, AU, NZ, PH), aubergine (UK,[1] IE), brinjal (IN, SG, MY, ZA), or baigan (IN, GY)[2][3] is a plant species in the nightshade family Solanaceae. Solanum melongena is grown worldwide for its edible fruit.",
-    price: "4",
-    link: "/products/egg-plant",
-  },
+ 
   {
     name: "Grain",
     img: "/product/gandum.jpg",
