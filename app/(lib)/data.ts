@@ -63,7 +63,7 @@ export const sales = [
     link: "/products/banana",
   },
   {
-    name: "corn",
+    name: "Corn",
     img: "/product/jagung.jpg",
     desc: "Maize /meɪz/ (Zea mays), also known as corn in North American and Australian English, is a tall stout grass that produces cereal grain. It was domesticated by indigenous peoples in southern Mexico about 9,000 years ago from wild teosinte. Native Americans planted it alongside beans and squashes in the Three Sisters polyculture. The leafy stalk of the plant gives rise to male inflorescences or tassels which produce pollen, and female inflorescences called ears. The ears yield grain, known as kernels or seeds. In modern commercial varieties, these are usually yellow or white; other varieties can be of many colors.",
     price: "2",
@@ -89,6 +89,13 @@ export const sales = [
     desc: "The cucumber (Cucumis sativus) is a widely-cultivated creeping vine plant in the family Cucurbitaceae that bears cylindrical to spherical fruits, which are used as culinary vegetables.[1] Considered an annual plant,[2] there are three main types of cucumber—slicing, pickling, and seedless—within which several cultivars have been created. The cucumber originates in Asia extending from India, Nepal, Bangladesh, China (Yunnan, Guizhou, Guangxi), and Northern Thailand,[3][4][5][6] but now grows on most continents, and many different types of cucumber are grown commercially and traded on the global market.",
     price: "2",
     link: "/products/cucumbar",
+  },
+  {
+    name: "Bok Choy",
+    img: "/product/sawi.jpg",
+    desc: "Bok choy (American English, Canadian English, and Australian English), pak choi (British English, South African English, and Caribbean English) or pok choi (Brassica rapa subsp. chinensis) is a type of Chinese cabbage, used as food. Chinensis varieties do not form heads and have green leaf blades with lighter bulbous bottoms instead, forming a cluster reminiscent of mustard greens. It has a flavor between spinach and water chestnuts but is slightly sweeter, with a mildly peppery undertone. The green leaves have a stronger flavor than the white bulb.",
+    price: "2",
+    link: "/products/bok-choyr",
   },
 ];
 

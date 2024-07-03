@@ -176,6 +176,14 @@ export default function Dashboard() {
           </div>
         </section>
         <section>
+          <Image
+            src="/logo/growNect.svg"
+            alt="grow nect"
+            width={500}
+            height={500}
+          />
+        </section>
+        <section>
           <h2 className="mb-4 text-xl font-bold">On Sale</h2>
 
           <div className="grid grid-cols-2 gap-2 md:grid-cols-4">
